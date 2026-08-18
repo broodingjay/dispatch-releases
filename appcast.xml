@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Writer's update feed.
+
+  An installed copy of Writer polls this file and nothing else — the URL is
+  compiled into every build as SUFeedURL and cannot be changed for an app already
+  on someone's Mac. So this address is permanent, and this repo must stay PUBLIC:
+  Sparkle reads it with no credentials.
+
+  Zero <item> elements is the correct "no update available" state, not an error.
+  It exists from day one so the very first build finds a valid feed rather than a
+  404 the first time someone checks.
+
+  Every future entry needs: sparkle:version (the MONOTONIC CFBundleVersion integer,
+  not the marketing string — Sparkle compares that one), sparkle:shortVersionString
+  (what the customer sees), an enclosure url, length in bytes, and
+  sparkle:edSignature produced by bin/sign_update. An entry without a valid
+  signature is refused by every installed copy, which is the point.
+-->
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Writer</title>
+    <link>https://raw.githubusercontent.com/broodingjay/writer-releases/main/appcast.xml</link>
+    <description>Updates for Writer, a markdown app for macOS.</description>
+    <language>en</language>
+  </channel>
+</rss>
