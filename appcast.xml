@@ -15,6 +15,12 @@
 
   The enclosure is the .dmg — the same file a person downloads by hand, so there
   is exactly one artifact to sign, notarize and keep straight.
+
+  THE ASSET NAME CARRIES NO VERSION, and must not start to. Two different links
+  depend on that: this enclosure pins a tag (…/download/v1.0/Dispatch.dmg), while
+  the Kit download email uses …/releases/latest/download/Dispatch.dmg, which
+  resolves to whatever is newest. Version the FILENAME and that second link 404s
+  the day a new release lands, silently, in an email nobody is watching.
 -->
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
   <channel>
@@ -33,7 +39,7 @@
         <p>The first release.</p>
       ]]></description>
       <enclosure
-        url="https://github.com/broodingjay/dispatch-releases/releases/download/v1.0/Dispatch-1.0.dmg"
+        url="https://github.com/broodingjay/dispatch-releases/releases/download/v1.0/Dispatch.dmg"
         sparkle:edSignature="1hmG5M58d33R0RjuhC4WZge8qibZGdXgfMiKp9h4zb56XmA4T2p+6J6KJ6z2Wvuw2rpuslQdJesyajsxIEo4Bw=="
         length="3562429"
         type="application/octet-stream" />
