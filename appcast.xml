@@ -1,27 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Writer's update feed.
+  Dispatch's update feed.
 
-  An installed copy of Writer polls this file and nothing else — the URL is
+  An installed copy of Dispatch polls this file and nothing else — the URL is
   compiled into every build as SUFeedURL and cannot be changed for an app already
   on someone's Mac. So this address is permanent, and this repo must stay PUBLIC:
   Sparkle reads it with no credentials.
 
-  Zero <item> elements is the correct "no update available" state, not an error.
-  It exists from day one so the very first build finds a valid feed rather than a
-  404 the first time someone checks.
-
-  Every future entry needs: sparkle:version (the MONOTONIC CFBundleVersion integer,
-  not the marketing string — Sparkle compares that one), sparkle:shortVersionString
+  Every entry needs: sparkle:version (the MONOTONIC CFBundleVersion integer, not
+  the marketing string — Sparkle compares that one), sparkle:shortVersionString
   (what the customer sees), an enclosure url, length in bytes, and
   sparkle:edSignature produced by bin/sign_update. An entry without a valid
   signature is refused by every installed copy, which is the point.
+
+  The enclosure is the .dmg — the same file a person downloads by hand, so there
+  is exactly one artifact to sign, notarize and keep straight.
 -->
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
   <channel>
-    <title>Writer</title>
-    <link>https://raw.githubusercontent.com/broodingjay/writer-releases/main/appcast.xml</link>
-    <description>Updates for Writer, a markdown app for macOS.</description>
+    <title>Dispatch</title>
+    <link>https://raw.githubusercontent.com/broodingjay/dispatch-releases/main/appcast.xml</link>
+    <description>Updates for Dispatch, a markdown writing app for macOS.</description>
     <language>en</language>
+    <item>
+      <title>1.0</title>
+      <pubDate>Thu, 21 Aug 2026 00:00:00 +0000</pubDate>
+      <sparkle:version>100</sparkle:version>
+      <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <link>https://github.com/broodingjay/dispatch-releases/releases/tag/v1.0</link>
+      <description><![CDATA[
+        <p>The first release.</p>
+      ]]></description>
+      <enclosure
+        url="https://github.com/broodingjay/dispatch-releases/releases/download/v1.0/Dispatch-1.0.dmg"
+        sparkle:edSignature="1hmG5M58d33R0RjuhC4WZge8qibZGdXgfMiKp9h4zb56XmA4T2p+6J6KJ6z2Wvuw2rpuslQdJesyajsxIEo4Bw=="
+        length="3562429"
+        type="application/octet-stream" />
+    </item>
   </channel>
 </rss>
