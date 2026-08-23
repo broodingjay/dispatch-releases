@@ -1,9 +1,9 @@
-# writer-releases
+# dispatch-releases
 
-Build artefacts and the Sparkle update feed for **Writer**, a markdown app for macOS.
+Build artefacts and the Sparkle update feed for **Dispatch**, a markdown app for macOS.
 
 This repository is public on purpose and holds no source code. An installed copy of
-Writer reads `appcast.xml` from here with no credentials, which is the only reason
+Dispatch reads `appcast.xml` from here with no credentials, which is the only reason
 it cannot live alongside the private source repo. It mirrors the arrangement Feeds
 already uses.
 

@@ -29,6 +29,38 @@
     <description>Updates for Dispatch, a markdown writing app for macOS.</description>
     <language>en</language>
     <item>
+      <title>1.0.1</title>
+      <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
+      <sparkle:version>101</sparkle:version>
+      <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <link>https://github.com/broodingjay/dispatch-releases/releases/tag/v1.0.1</link>
+      <description><![CDATA[
+        <h3>Opening files that aren&#8217;t in your library</h3>
+        <ul>
+          <li>Dispatch opens <code>.md</code>, <code>.markdown</code> and <code>.txt</code>
+              files from anywhere. Double-click one in Finder, use Open With, or drag it onto
+              the Dispatch icon in the Dock. Edits save back to the file where it is.</li>
+          <li>To make Dispatch the default for a file type: Finder &#8594; Get Info &#8594;
+              Open With &#8594; Change All. In 1.0 this appeared to work and then did nothing.</li>
+          <li>Tags, goals, status and starring are turned off for a file outside your library.
+              Those are stored in the file itself, and Dispatch does not add them to a file it
+              did not create.</li>
+          <li>A file that already has its own frontmatter is shown and saved whole, exactly as
+              written.</li>
+          <li>Opening several files at once shows the first. Any that aren&#8217;t shown are
+              named on screen rather than dropped silently.</li>
+        </ul>
+        <p><strong>Known:</strong> opening a file when Dispatch isn&#8217;t already running
+           leaves a second, empty window behind the document.</p>
+      ]]></description>
+      <enclosure
+        url="https://github.com/broodingjay/dispatch-releases/releases/download/v1.0.1/Dispatch.dmg"
+        sparkle:edSignature="HdwRfS5thWNTCXyPL+WCh0h4Rla9gZQptBDbSMxPbKQs+zM5tNhUbasng94MB09Vp+KcC7eKMsbSLjJRjNn0CQ=="
+        length="3636714"
+        type="application/octet-stream" />
+    </item>
+    <item>
       <title>1.0</title>
       <pubDate>Thu, 21 Aug 2026 00:00:00 +0000</pubDate>
       <sparkle:version>100</sparkle:version>
