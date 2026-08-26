@@ -29,6 +29,24 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <description>Updates for Dispatch, a markdown writing app for macOS.</description>
     <language>en</language>
     <item>
+      <title>1.0.3</title>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+      <sparkle:version>103</sparkle:version>
+      <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <link>https://github.com/broodingjay/dispatch-releases/releases/tag/v1.0.3</link>
+      <description><![CDATA[
+        <h3>Fixes</h3>
+        <ul>
+          <li><strong>Keyboard Shortcuts is in the action bar again.</strong> In 1.0.2 the entry
+              was registered only while a piece was open, so searching &#8984;K for it from the
+              library &#8212; the one place the <strong>?</strong> button lives &#8212; answered
+              &#8220;No matching actions&#8221;.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://github.com/broodingjay/dispatch-releases/releases/download/v1.0.3/Dispatch.dmg" sparkle:edSignature="HL3bzUa/E1r0QIeYuJweyhjc8KVlzo33vOUa/QIpmDmbsI/uaGIu9ncwG5EipOknitSUSrF99L6mLP4mVpctAA==" length="3712707" type="application/octet-stream"></enclosure>
+    </item>
+    <item>
       <title>1.0.2</title>
       <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
       <sparkle:version>102</sparkle:version>
@@ -106,6 +124,6 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: mUmcNvwmz7WacQ6LM9GlKUJOhOWhrlb6bLFgef9Y7oNEoKe/QmX6aicyj6cnkHePQ7OQ+5dGu6avF7dDLfQdBg==
-length: 6776
+edSignature: RALwToBQHZNqJi5rvqoYpJpERyd2fEgHoWufsUif0vDhJ7sJgpatLnYRTj5wkxWJ3Vb0lfbiAud9X3BDr8g8Aw==
+length: 7887
 -->
