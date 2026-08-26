@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><!-- sparkle-sign-warning:
+IMPORTANT: This file was signed by Sparkle. Any modifications to this file requires re-signing this file with generate_appcast or sign_update! The signed signature will be embedded at the end of this file.
+--><!--
   Dispatch's update feed.
 
   An installed copy of Dispatch polls this file and nothing else — the URL is
@@ -21,13 +22,48 @@
   the Kit download email uses …/releases/latest/download/Dispatch.dmg, which
   resolves to whatever is newest. Version the FILENAME and that second link 404s
   the day a new release lands, silently, in an email nobody is watching.
--->
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+--><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
   <channel>
     <title>Dispatch</title>
     <link>https://raw.githubusercontent.com/broodingjay/dispatch-releases/main/appcast.xml</link>
     <description>Updates for Dispatch, a markdown writing app for macOS.</description>
     <language>en</language>
+    <item>
+      <title>1.0.2</title>
+      <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+      <sparkle:version>102</sparkle:version>
+      <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <link>https://github.com/broodingjay/dispatch-releases/releases/tag/v1.0.2</link>
+      <description><![CDATA[
+        <h3>Using the same writing on a second Mac</h3>
+        <ul>
+          <li><strong>Settings &#8594; Library &#8594; Use Existing Folder&#8230;</strong> points
+              Dispatch at writing that is already on disk &#8212; a Dropbox or iCloud folder that
+              synced down to another Mac before Dispatch was installed there. Nothing is copied,
+              moved or deleted on either side.</li>
+          <li>Previously the only option was <strong>Move&#8230;</strong>, which refuses a folder
+              that already has files in it, so a second machine could not be set up at all.</li>
+        </ul>
+        <h3>Keyboard</h3>
+        <ul>
+          <li>A <strong>?</strong> in the bottom-left corner of the library lists every key
+              Dispatch listens for.</li>
+        </ul>
+        <h3>Fixes</h3>
+        <ul>
+          <li>An externally-opened file no longer loses its frontmatter after switching apps.</li>
+          <li><strong>Save a Copy of Everything</strong> twice in the same minute no longer
+              deletes the first backup.</li>
+          <li>Licence checks no longer follow a redirect away from the store.</li>
+        </ul>
+        <h3>Update channel</h3>
+        <p><strong>Updates work again.</strong> Every build so far required a signed update feed
+           and the published feed was not signed, so no copy would ever have accepted an update.
+           If you are reading this in the updater, that is the fix working.</p>
+      ]]></description>
+      <enclosure url="https://github.com/broodingjay/dispatch-releases/releases/download/v1.0.2/Dispatch.dmg" sparkle:edSignature="jo1e18NZq8EUUo4jSXByQw9gbjd5ltdk1k/EZMUQvQxkD4J5uuHt09WxxYu07tcn/ZCfwPK3/HmI9LCu1us6Bw==" length="3712970" type="application/octet-stream"></enclosure>
+    </item>
     <item>
       <title>1.0.1</title>
       <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
@@ -54,11 +90,7 @@
         <p><strong>Known:</strong> opening a file when Dispatch isn&#8217;t already running
            leaves a second, empty window behind the document.</p>
       ]]></description>
-      <enclosure
-        url="https://github.com/broodingjay/dispatch-releases/releases/download/v1.0.1/Dispatch.dmg"
-        sparkle:edSignature="HdwRfS5thWNTCXyPL+WCh0h4Rla9gZQptBDbSMxPbKQs+zM5tNhUbasng94MB09Vp+KcC7eKMsbSLjJRjNn0CQ=="
-        length="3636714"
-        type="application/octet-stream" />
+      <enclosure url="https://github.com/broodingjay/dispatch-releases/releases/download/v1.0.1/Dispatch.dmg" sparkle:edSignature="HdwRfS5thWNTCXyPL+WCh0h4Rla9gZQptBDbSMxPbKQs+zM5tNhUbasng94MB09Vp+KcC7eKMsbSLjJRjNn0CQ==" length="3636714" type="application/octet-stream"></enclosure>
     </item>
     <item>
       <title>1.0</title>
@@ -70,11 +102,10 @@
       <description><![CDATA[
         <p>The first release.</p>
       ]]></description>
-      <enclosure
-        url="https://github.com/broodingjay/dispatch-releases/releases/download/v1.0/Dispatch.dmg"
-        sparkle:edSignature="4Rv5ePeN/aM+K0jXChZchz2vk65DpuI5429ZMTeSTyZEL5HXHMjiP90d/EvPCHhRnYJas9BNRhqYjiauVkvGAA=="
-        length="3575777"
-        type="application/octet-stream" />
+      <enclosure url="https://github.com/broodingjay/dispatch-releases/releases/download/v1.0/Dispatch.dmg" sparkle:edSignature="4Rv5ePeN/aM+K0jXChZchz2vk65DpuI5429ZMTeSTyZEL5HXHMjiP90d/EvPCHhRnYJas9BNRhqYjiauVkvGAA==" length="3575777" type="application/octet-stream"></enclosure>
     </item>
   </channel>
-</rss>
+</rss><!-- sparkle-signatures:
+edSignature: mUmcNvwmz7WacQ6LM9GlKUJOhOWhrlb6bLFgef9Y7oNEoKe/QmX6aicyj6cnkHePQ7OQ+5dGu6avF7dDLfQdBg==
+length: 6776
+-->
